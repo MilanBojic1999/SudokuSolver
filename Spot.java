@@ -23,10 +23,11 @@ public class Spot {
     public void show(){
         if(selected){
             gc.setFill(Color.SILVER);
+            gc.setLineWidth(7);
         }else{
             gc.setFill(Color.SKYBLUE);
+            gc.setLineWidth(2);
         }
-        gc.setLineWidth(2);
         gc.strokeRect(i*100,j*100,h,w);
         gc.fillRect(i*100,j*100,h,w);
         gc.setFill(Color.BLACK);
